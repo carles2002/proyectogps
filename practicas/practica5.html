@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Practica 4</title>
+  <title>Practica 5</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -33,7 +33,7 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-  <script src="../practicas/archivosP/ZONAS_VALIDAS - copia.js"></script>
+  <script src="../practicas/archivosP/COMBINACION copy.js"></script>
 
 
 
@@ -48,7 +48,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
           <a class="navbar-brand" href="../index.html">
             <img src="../images/logo.png" alt="" /><span>
-              Practica 4
+              Practica 5
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -79,7 +79,7 @@
 
   <section class="fruit_section layout_padding-top">
     <div class="container">
-      <h2 class="custom_heading">Practica 4</h2>
+      <h2 class="custom_heading">Practica 5</h2>
       <p class="custom_heading-text">
         Mapa web Leaflet
       </p>
@@ -87,7 +87,7 @@
         <div class="col-md-8">
           <div class="fruit_detail-box mb-3">
             <h3>
-              Análisis del territorio
+              Teledetección
             </h3>
             <div class="container-fluid">
               <div id="map" style="width: 1000px; height: 700px;"
@@ -197,7 +197,8 @@
       
       
         // Superposiciones (Capas de datos como GeoJSON)
-        var geojsonLayer = L.geoJSON(data, {
+        
+        var geojsonLayer = L.geoJSON(dataa, {
           onEachFeature: function (feature, layer) {
             
           },
