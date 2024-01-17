@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Practica 4</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="../css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="../css/responsive.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+</head>
+
+<body>
+  <div class="hero_area sub_pages">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="../images/logo.png" alt="" /><span>
+              Practica 4
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+
+              </ul>
+
+            </div>
+
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+  </div>
+
+
+  <!-- fruits section -->
+
+  <section class="fruit_section layout_padding-top">
+    <div class="container">
+      <h2 class="custom_heading">Practica 4</h2>
+      <p class="custom_heading-text">
+        Captura de pantalla del pdf con el resultado
+      </p>
+      <div class="row layout_padding2">
+        <div class="col-md-8">
+          <div class="fruit_detail-box">
+            <h3>
+              Análisis del territorio
+            </h3>
+            <div class="container-fluid">
+              <div id="map" style="width: 600px; height: 400px; position: relative;"
+                class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                tabindex="0">
+                <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+                  <div class="leaflet-pane leaflet-tile-pane">
+                    <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                      <div class="leaflet-tile-container leaflet-zoom-animated"
+                        style="z-index: 19; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt=""
+                          src="https://tile.openstreetmap.org/13/4093/2723.png" class="leaflet-tile leaflet-tile-loaded"
+                          style="width: 256px; height: 256px; transform: translate3d(56px, -91px, 0px); opacity: 1;"><img
+                          alt="" src="https://tile.openstreetmap.org/13/4094/2723.png"
+                          class="leaflet-tile leaflet-tile-loaded"
+                          style="width: 256px; height: 256px; transform: translate3d(312px, -91px, 0px); opacity: 1;"><img
+                          alt="" src="https://tile.openstreetmap.org/13/4093/2724.png"
+                          class="leaflet-tile leaflet-tile-loaded"
+                          style="width: 256px; height: 256px; transform: translate3d(56px, 165px, 0px); opacity: 1;"><img
+                          alt="" src="https://tile.openstreetmap.org/13/4094/2724.png"
+                          class="leaflet-tile leaflet-tile-loaded"
+                          style="width: 256px; height: 256px; transform: translate3d(312px, 165px, 0px); opacity: 1;"><img
+                          alt="" src="https://tile.openstreetmap.org/13/4092/2723.png"
+                          class="leaflet-tile leaflet-tile-loaded"
+                          style="width: 256px; height: 256px; transform: translate3d(-200px, -91px, 0px); opacity: 1;"><img
+                          alt="" src="https://tile.openstreetmap.org/13/4095/2723.png"
+                          class="leaflet-tile leaflet-tile-loaded"
+                          style="width: 256px; height: 256px; transform: translate3d(568px, -91px, 0px); opacity: 1;"><img
+                          alt="" src="https://tile.openstreetmap.org/13/4092/2724.png"
+                          class="leaflet-tile leaflet-tile-loaded"
+                          style="width: 256px; height: 256px; transform: translate3d(-200px, 165px, 0px); opacity: 1;"><img
+                          alt="" src="https://tile.openstreetmap.org/13/4095/2724.png"
+                          class="leaflet-tile leaflet-tile-loaded"
+                          style="width: 256px; height: 256px; transform: translate3d(568px, 165px, 0px); opacity: 1;">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="leaflet-pane leaflet-overlay-pane"></div>
+                  <div class="leaflet-pane leaflet-shadow-pane"></div>
+                  <div class="leaflet-pane leaflet-marker-pane"></div>
+                  <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                  <div class="leaflet-pane leaflet-popup-pane"></div>
+                  <div class="leaflet-proxy leaflet-zoom-animated"
+                    style="transform: translate3d(1.04805e+06px, 697379px, 0px) scale(4096);"></div>
+                </div>
+                <div class="leaflet-control-container">
+                  <div class="leaflet-top leaflet-left">
+                    <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in"
+                        href="#" title="Zoom in" role="button" aria-label="Zoom in" aria-disabled="false"><span
+                          aria-hidden="true">+</span></a><a class="leaflet-control-zoom-out" href="#" title="Zoom out"
+                        role="button" aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a>
+                    </div>
+                  </div>
+                  <div class="leaflet-top leaflet-right"></div>
+                  <div class="leaflet-bottom leaflet-left"></div>
+                  <div class="leaflet-bottom leaflet-right">
+                    <div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com"
+                        title="A JavaScript library for interactive maps"><svg aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"
+                          class="leaflet-attribution-flag">
+                          <path fill="#4C7BE1" d="M0 0h12v4H0z"></path>
+                          <path fill="#FFD500" d="M0 4h12v3H0z"></path>
+                          <path fill="#E0BC00" d="M0 7h12v1H0z"></path>
+                        </svg> Leaflet</a> <span aria-hidden="true">|</span> © <a
+                        href="http://www.openstreetmap.org/copyright">OpenStreetMap</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- end fruits section -->
+
+
+  < <!-- footer section -->
+    <section class="container-fluid footer_section">
+      <p>
+        Copyright &copy; 2019 All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </section>
+    <!-- footer section -->
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+     
+
+
+    <script>
+
+
+
+      const map = L.map('map').setView([42.543501, -5.517587], 7);
+
+      const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+     
+     
+
+
+    </script>
+
+
+
+</body>
+
+</html>
