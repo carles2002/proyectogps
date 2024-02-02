@@ -1,98 +1,308 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <title>Practica 7</title>
 
-  <title>Practica 6</title>
+    <!-- slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
+    />
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="../css/responsive.css" rel="stylesheet" />
+  </head>
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
-  <!-- Custom styles for this template -->
-  <link href="../css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="../css/responsive.css" rel="stylesheet" />
-</head>
+  <body>
+    <div class="hero_area sub_pages">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../images/logo.png" alt="" /><span> Practica 7 </span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-<body>
-  <div class="hero_area sub_pages">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../images/logo.png" alt="" /><span>
-              Practica 7
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-
-              </ul>
-
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div
+                class="d-flex ml-auto flex-column flex-lg-row align-items-center"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../index.html"
+                      >Home <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
 
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
+    <!-- fruits section -->
 
-  </div>
+    <section class="fruit_section layout_padding-top">
+      <div class="container">
+        <h2 class="custom_heading">Practica 7</h2>
+        <p class="custom_heading-text">
+          GNSS PYTHON
+        </p>
+        <div class="row layout_padding2">
+          <div class="col-md-8">
+            <div class="fruit_detail-box">
+              <h3>Tabla de resultados y Gráfico de rendimiento</h3>
+              <div class="container-fluid">
+                
+                <div>
+                  <style scoped="">
+                    .dataframe tbody tr th:only-of-type {
+                      vertical-align: middle;
+                    }
 
+                    .dataframe tbody tr th {
+                      vertical-align: top;
+                    }
 
-  <!-- fruits section -->
+                    .dataframe thead th {
+                      text-align: right;
+                    }
+                  </style>
+                  <table border="1" class="dataframe">
+                    <thead>
+                      <tr style="text-align: right">
+                        <th></th>
+                        <th>Punto</th>
+                        <th>Latitud</th>
+                        <th>Longitud</th>
+                        <th>Cota (m)</th>
+                        <th>Hora</th>
+                        <th>Distancia (m)</th>
+                        <th>Dist_O (m)</th>
+                        <th>Pendiente (%)</th>
+                        <th>Velocidad (km/h)</th>
+                        <th>Orientación (º)</th>
+                        <th>Tiempo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        
+                        <td>001</td>
+                        <td>38.968484</td>
+                        <td>-0.148688</td>
+                        <td>-6.847729</td>
+                        <td>2020-10-06 15:42:19</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>002</td>
+                        <td>38.967718</td>
+                        <td>-0.150631</td>
+                        <td>5.751281</td>
+                        <td>2020-10-06 15:44:55</td>
+                        <td>188.19606</td>
+                        <td>188.19606</td>
+                        <td>6.69</td>
+                        <td>4.34</td>
+                        <td>243.11</td>
+                        <td>49.0</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>003</td>
+                        <td>38.967415</td>
+                        <td>-0.151293</td>
+                        <td>3.847285</td>
+                        <td>2020-10-06 15:45:44</td>
+                        <td>66.362743</td>
+                        <td>254.558803</td>
+                        <td>-2.87</td>
+                        <td>4.88</td>
+                        <td>239.52</td>
+                        <td>116.0</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>004</td>
+                        <td>38.965885</td>
+                        <td>-0.151144</td>
+                        <td>4.562065</td>
+                        <td>2020-10-06 15:47:40</td>
+                        <td>170.484929</td>
+                        <td>425.043732</td>
+                        <td>0.42</td>
+                        <td>5.29</td>
+                        <td>175.67</td>
+                        <td>65.0</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>005</td>
+                        <td>38.965216</td>
+                        <td>-0.150998</td>
+                        <td>5.600896</td>
+                        <td>2020-10-06 15:48:45</td>
+                        <td>75.395153</td>
+                        <td>500.438885</td>
+                        <td>1.38</td>
+                        <td>4.18</td>
+                        <td>170.37</td>
+                        <td>15.0</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>006</td>
+                        <td>38.965000</td>
+                        <td>-0.150899</td>
+                        <td>4.003664</td>
+                        <td>2020-10-06 15:49:00</td>
+                        <td>25.478386</td>
+                        <td>525.917271</td>
+                        <td>-6.27</td>
+                        <td>6.11</td>
+                        <td>160.38</td>
+                        <td>42.0</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>007</td>
+                        <td>38.964634</td>
+                        <td>-0.150661</td>
+                        <td>4.726735</td>
+                        <td>2020-10-06 15:49:42</td>
+                        <td>45.568711</td>
+                        <td>571.485983</td>
+                        <td>1.59</td>
+                        <td>3.91</td>
+                        <td>153.18</td>
+                        <td>90.0</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>008</td>
+                        <td>38.963839</td>
+                        <td>-0.150091</td>
+                        <td>7.208261</td>
+                        <td>2020-10-06 15:51:12</td>
+                        <td>101.131387</td>
+                        <td>672.617369</td>
+                        <td>2.45</td>
+                        <td>4.05</td>
+                        <td>150.86</td>
+                        <td>75.0</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>009</td>
+                        <td>38.962955</td>
+                        <td>-0.150394</td>
+                        <td>9.550250</td>
+                        <td>2020-10-06 15:52:27</td>
+                        <td>101.649718</td>
+                        <td>774.267087</td>
+                        <td>2.3</td>
+                        <td>4.88</td>
+                        <td>194.92</td>
+                        <td>228.0</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>010</td>
+                        <td>38.962942</td>
+                        <td>-0.147204</td>
+                        <td>1.779755</td>
+                        <td>2020-10-06 15:56:15</td>
+                        <td>275.600291</td>
+                        <td>1049.867378</td>
+                        <td>-2.82</td>
+                        <td>4.35</td>
+                        <td>90.3</td>
+                        <td>125.0</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>011</td>
+                        <td>38.963695</td>
+                        <td>-0.145611</td>
+                        <td>2.237785</td>
+                        <td>2020-10-06 15:58:20</td>
+                        <td>161.060703</td>
+                        <td>1210.928081</td>
+                        <td>0.28</td>
+                        <td>4.64</td>
+                        <td>58.7</td>
+                        <td>0.0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="row layout_padding2">
+                    <div class="col-md-8">
+                      <div class="fruit_detail-box">
+                        <h3>
+                          Gráfico
+                        </h3>
+                        <div class="container-fluid">
+                          <img src="../practicas/archivosP/Grafica.png" class="img-responsive w-150 ">
+                        </div>
+                      </div>
+                    </div>
 
-  <section class="fruit_section layout_padding-top">
-    <div class="container">
-      <h2 class="custom_heading">Practica 7</h2>
-      <p class="custom_heading-text">
-        Captura de pantalla del pdf con el resultado
-      </p>
-      <div class="row layout_padding2">
-        <div class="col-md-8">
-          <div class="fruit_detail-box">
-            <h3>
-              Introducción QGIS
-            </h3>
-            <div class="container-fluid">
-              <img src="../practicas/archivosP/prac1.png" class="img-responsive w-150 ">
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- end fruits section -->
 
-  <!-- end fruits section -->
-
-
-  < <!-- footer section -->
+    <
+    <!-- footer section -->
     <section class="container-fluid footer_section">
       <p>
         Copyright &copy; 2019 All Rights Reserved By
@@ -103,9 +313,5 @@
 
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-
-
-
-</body>
-
+  </body>
 </html>
